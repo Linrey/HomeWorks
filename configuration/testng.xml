@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="MainSuite" verbose="10" >
+<parameter name="csvPath" value="./testcsv1.csv" />
+<parameter name="log" value="test1234mail5678" />
+<parameter name="pswd" value="zaq1xsw2cde3vfr4" />
+  <test name="MainTest">
+    <classes>
+      <class name="tests.LoginTest"/>
+      <class name="tests.DraftTest"/>
+      <class name="tests.MailTest"/>
+    </classes>
+  </test>
+</suite>
