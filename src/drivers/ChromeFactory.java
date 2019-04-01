@@ -13,8 +13,8 @@ public class ChromeFactory extends Factory{
 	@Override
 	public WebDriver getDriver() {
 		ChromeDriverService service = new ChromeDriverService.Builder()
-	            //.usingDriverExecutable(new File("res/chromedriver.exe"))
-	            .usingDriverExecutable(new File("res/chromedriver"))
+	            .usingDriverExecutable(new File("res/chromedriver.exe"))
+	            //.usingDriverExecutable(new File("res/chromedriver"))
 	            .usingAnyFreePort()
 	            .build();
         try {
